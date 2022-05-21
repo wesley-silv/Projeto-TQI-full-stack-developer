@@ -173,8 +173,7 @@ a:hover {
   visibility: visible;
   opacity: 1;
 }
-/* MAIN */
-
+/* CARDS */
 .container {
   width: 100%;
   height: auto;
@@ -210,6 +209,7 @@ a:hover {
   width: 40%;
   font-family:sans-serif;
   letter-spacing: 1px;
+  text-align: center;
   color: rgb(109, 109, 109);
 }
 .card-wrapper::before {
@@ -217,8 +217,7 @@ a:hover {
   position: absolute;
   height: 100px;
   width: 100px;
-  display: block;
-  border: 1px solid #ffffff ;
+  display: block;  
   opacity: 0;
   transition: 0.3s;
 }
@@ -244,4 +243,37 @@ a:hover {
   opacity: 1;
   width: 350px;
   height: 250px;
+}
+.card:hover > .card-wrapper p {
+  font-size: 14px;
+  opacity: 1;
+  visibility: visible;
+}
+/* FOOTER */
+
+.footer {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:#2e5c8b;
+}
+/* RESPONSIVO */
+/* o bloco de código abaixo precisa ser revisado. */
+ Qmedia max-width: 800px {
+   .social-media {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.container {
+  margin-top: 0;
+}
+.card-container {
+  flex-direction: column;
+}
+.container .card-container:nth-child(1) {
+
 }
