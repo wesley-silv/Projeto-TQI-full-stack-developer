@@ -11,3 +11,10 @@ body {
   padding: 10px;
   margin: 0 auto;
 }
+button {
+  border-radius: 50%;
+  height: 2rem;
+  width: 2rem;
+  font-size: 20px;
+  text-align: center;
+}
